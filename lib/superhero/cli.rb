@@ -1,5 +1,10 @@
-class CLI 
-  
+class CLI
+  def run 
+    puts "   "
+    puts "Hello and welcome to my app!"
+    puts "  "
+    
+  end
   
 end
 

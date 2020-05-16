@@ -1,4 +1,4 @@
-class API 
+class API
   
 end
 

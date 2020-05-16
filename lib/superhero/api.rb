@@ -1,7 +1,7 @@
 class API
-  def self.get_hero(heroname)
+  def self.get_hero(name)
     ## what is my endpoint
-    url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{heroname}"
+    url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{name}"
     ### how do I go there and how do I get what I need (will return json)
     response = Net::HTTP.get(URI(url))
   

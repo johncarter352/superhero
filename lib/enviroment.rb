@@ -1,3 +1,10 @@
 ## listing all dependencies for my project.
 
-puts "Is it working?"
+
+require "pry"
+require "httparty" # for interacting with my api
+require "json" ## parsing datd from api to json
+
+require_relative "./superhero/cli"
+require_relative "./superhero/api"
+require_relative "./superhero/hero"

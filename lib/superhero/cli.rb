@@ -5,7 +5,7 @@ class CLI
     puts "  "
     puts "What superhero would you like to know more about?"
     puts "   "
-    @hero = gets.strip.downcase
+    @heroname = gets.strip.downcase
     API.get_hero(@heroname)
     
   end

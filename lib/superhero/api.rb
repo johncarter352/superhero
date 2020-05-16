@@ -4,9 +4,12 @@ class API
     url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{heroname}"
     ### how do I go there and how do I get what I need (will return json)
     response = Net::HTTP.get(URI(url))
+  
     # how do I handle that json and turn it into meaningful data?
-    binding.pry
+     results = JSON.parse(response)["results"]
+    
     ## how do IU make drink objects from that data 
+     binding.pry
   end
   
   

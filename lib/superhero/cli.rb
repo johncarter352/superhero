@@ -11,7 +11,7 @@ class CLI
     puts "Choose a category you would like to get more information on:"
     puts '"Biography", "Power Statistics", "Appearance", or "Work"?'
     response = gets.strip.downcase
-    if response == "Biography"
+    if response = "Biography"
       puts API.get_bio
     elsif response == "Power Statistics"
       puts API.get_stats

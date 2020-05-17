@@ -19,23 +19,6 @@ class Hero
   end
     
   
-  def name_choice
-  end
-  
-  def biography
-     "Biography"
-  end 
-  
-  def powerstats
-    "Power Statistics"
-  end 
-  
-  def appearance 
-     "Appearance"
-  end 
-  
-  def work 
-    "Work"
   end
   
   

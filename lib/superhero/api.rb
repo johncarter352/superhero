@@ -16,7 +16,6 @@ class API
   
   def self.get_bio
     bio = @object.results[0].biography
-    binding.pry
     bio.each do |a|
       
     end

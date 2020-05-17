@@ -19,12 +19,15 @@ class API
   end 
   
   def self.get_stats
+    @object.results[0].powerstats
   end 
   
   def self.get_appearance
+    @object.results[0].appearance
   end 
   
   def self.get_work
+    @object.results[0].work
   end 
   
   

@@ -1,9 +1,9 @@
 class CLI
   def run 
     puts "   "
-    puts "Hello and welcome to my app!"
+    puts "Welcoming all new Superhero fans!"
     puts "  "
-    puts "What superhero would you like to know more about?"
+    puts "What superhero would you like to know more information about?"
     puts "   "
     @name = gets.strip.downcase
     API.get_hero(@name)
@@ -24,6 +24,11 @@ class CLI
     puts "  "
     puts API.get_bio
     puts "  "
+    puts API.get_stats
+    puts "  "
+    puts API.get_appearance
+    puts "  "
+    puts API.get_work
     
   end
   

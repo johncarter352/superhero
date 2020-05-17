@@ -6,16 +6,17 @@ class API
   
    
      @object = JSON.parse(response, object_class: OpenStruct)
-  
-     
-     #binding.pry
-  end
-  
+    
      @object.results[0].name
      @object.results[0].biography
      @object.results[0].powerstats
      @object.results[0].appearance
      @object.results[0].work
+     
+     #binding.pry
+  end
+  
+
   
   
 end

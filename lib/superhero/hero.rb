@@ -1,6 +1,6 @@
 class Superhero
   
-  attr_accessor :name, :fullname, :placeofbirth, :publisher
+  attr_accessor :name, :object
   
   @@all = []
   
@@ -12,6 +12,23 @@ class Superhero
   def self.all 
     @@all
   end
+  
+  def biography
+    
+  end 
+  
+  def powerstats
+    
+  end 
+  
+  def appearance 
+    
+  end 
+  
+  def work 
+    
+  end
+  
   
   
   

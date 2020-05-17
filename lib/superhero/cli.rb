@@ -13,24 +13,30 @@ class CLI
     array = ["Biography", "Stats", "Appearance", "Work"]
     puts array
     puts " "
-    choice = gets.strip.downcase
+    choice = array.gets.strip.downcase
     if choice = array[0]
-      puts @newname1
-      puts API.get_bio 
       puts ""
-      puts @newname2
+      puts API.newname
+      puts API.get_bio 
+      puts API.newname2
       puts API.get_bio2
     elsif choice = array[1]
-      puts API.get_stats
       puts ""
+      puts API.newname
+      puts API.get_stats
+      puts API.newname2
       puts API.get_stats2
     elsif choice = array[2]
-      puts API.get_appearance
       puts ""
+      puts API.newname
+      puts API.get_appearance
+      puts API.newname2
       puts API.get_appearance2
     elsif choice = array[3]
-      puts API.get_work
       puts ""
+      puts API.newname
+      puts API.get_work
+      puts API.newname2
       puts API.get_work2
     end
   end

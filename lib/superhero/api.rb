@@ -6,9 +6,9 @@ class API
     response = Net::HTTP.get(URI(url))
   
     # how do I handle that json and turn it into meaningful data?
-     results = JSON.parse(response)["results"]
-     objects = JSON. parse(results, object_class: OpenStruct)
-     end
+     #results = JSON.parse(response)["results"]
+     objects = JSON.parse(response, object_class: OpenStruct)
+     
     
     ## how do IU make drink objects from that data 
      binding.pry

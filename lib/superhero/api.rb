@@ -6,7 +6,7 @@ class API
   
    
      object = JSON.parse(response, object_class: OpenStruct)
-     object.response[0]
+     object.results[0].name
      
      binding.pry
   end

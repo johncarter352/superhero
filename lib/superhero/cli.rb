@@ -7,6 +7,8 @@ class CLI
     puts "   "
     @name = gets.strip.downcase
     API.get_hero(@name)
+    puts "   "
+    puts "Choose a category you would like to get more information on"
     
   end
   

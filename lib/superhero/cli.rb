@@ -7,6 +7,7 @@ class CLI
     puts "   "
     @name = gets.strip.downcase
     API.get_hero(@name)
+    
      ## if name has multiple results ask user which name he is refering to 
      
      ## once user chooses ask user which category he would like to have infomation about
@@ -19,6 +20,8 @@ class CLI
     puts "   "
     puts "Choose a category you would like to get more information on:"
     puts "Biography, Power Statistics, Appearance, or Work"
+    #if
+    puts API.get_bio
     
   end
   

@@ -14,8 +14,8 @@ class Hero
     @@all
   end
   
-  def results
-    API.results
+  def result
+    API.result
   end
     
   
@@ -38,7 +38,7 @@ class Hero
     @object.results[0].work
   end
   
-  binding.pry
+  
   
   
   

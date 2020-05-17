@@ -6,9 +6,9 @@ class API
     response = Net::HTTP.get(URI(url))
     object = JSON.parse(response)
     @results = object["results"]
-     
-     binding.pry
-    
+    @newname = @results[0]["name"] 
+    @newname2 = @results[1]["name"]
+    ## binding.pry
   end
   
   def self.get_bio

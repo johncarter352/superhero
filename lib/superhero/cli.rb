@@ -15,9 +15,11 @@ class CLI
     puts " "
     choice = gets.strip.downcase
     if choice = array[0]
+      puts @newname1
       puts API.get_bio 
       puts ""
-      puts APT.get_bio2
+      puts @newname2
+      puts API.get_bio2
     elsif choice = array[1]
       puts API.get_stats
       puts ""

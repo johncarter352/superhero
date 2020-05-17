@@ -6,7 +6,7 @@ class API
     response = Net::HTTP.get(URI(url))
     object = JSON.parse(response)
     @results = object["results"]
-    ## binding.pry
+   
   end
   
   def self.newname 
@@ -39,7 +39,7 @@ class API
   
   def self.get_appearance
   app = @results[0]["appearance"]
-  app.colelct {|key, value| puts "#{key}: #{value}"}
+  app.collect {|key, value| puts "#{key}: #{value}"}
   end 
   
    def self.get_appearance2

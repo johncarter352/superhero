@@ -15,19 +15,27 @@ class API
   end
   
   def self.get_bio
-    @object.results[0].biography
+    bio = @object.results[0].biography
+    bio.each do |a|
+      puts a 
   end 
   
   def self.get_stats
-    @object.results[0].powerstats
+    ps = @object.results[0].powerstats
+    ps.each do |a|
+      puts a 
   end 
   
   def self.get_appearance
-    @object.results[0].appearance
+    app = @object.results[0].appearance
+    app.each do |a|
+      puts a 
   end 
   
   def self.get_work
-    @object.results[0].work
+   work = @object.results[0].work
+   work.each do |a|
+     puts a 
   end 
   
   

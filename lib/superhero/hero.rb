@@ -23,19 +23,19 @@ class Hero
   end
   
   def biography
-     @object.results[0].biography
+     "Biography"
   end 
   
   def powerstats
-    @object.results[0].powerstats
+    "Power Statistics"
   end 
   
   def appearance 
-     @object.results[0].appearance
+     "Appearance"
   end 
   
   def work 
-    @object.results[0].work
+    "Work"
   end
   
   

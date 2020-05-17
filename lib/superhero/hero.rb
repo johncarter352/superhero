@@ -1,6 +1,6 @@
 class Hero
   
-  attr_accessor :name, :object, :results
+  attr_accessor :name, :object, :biography, :stats, :appearance, :work 
   
   @@all = []
   

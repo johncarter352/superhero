@@ -9,20 +9,27 @@ class CLI
     @name = gets.strip.downcase
     puts "   "
     API.get_hero(@name)
-    if @results = 
     puts "Choose a category you would like to get more information on:"
     array = ["Biography", "Stats", "Appearance", "Work"]
     puts array
     puts " "
     choice = gets.strip.downcase
     if choice = array[0]
-      puts API.get_bio
+      puts API.get_bio 
+      puts ""
+      puts APT.get_bio2
     elsif choice = array[1]
       puts API.get_stats
+      puts ""
+      puts API.get_stats2
     elsif choice = array[2]
       puts API.get_appearance
+      puts ""
+      puts API.get_appearance2
     elsif choice = array[3]
       puts API.get_work
+      puts ""
+      puts API.get_work2
     end
   end
 

@@ -16,7 +16,7 @@ class API
    bio.each {|key, value| puts "#{key}: #{value}"}
   end 
   
-  def self.get_bio
+  def self.get_bio2
    bio = @results[1]["biography"]
    bio.each {|key, value| puts "#{key}: #{value}"}
   end 
@@ -26,7 +26,7 @@ class API
   stats.each {|key, value| puts "#{key}: #{value}"}
   end 
   
-  def self.get_stats
+  def self.get_stats2
   stats = @results[1]["powerstats"]
   stats.each {|key, value| puts "#{key}: #{value}"}
   end 
@@ -36,7 +36,7 @@ class API
   app.each {|key, value| puts "#{key}: #{value}"}
   end 
   
-   def self.get_appearance
+   def self.get_appearance2
   app = @results[1]["appearance"]
   app.each {|key, value| puts "#{key}: #{value}"}
   end 
@@ -46,7 +46,7 @@ class API
   work.each {|key, value| puts "#{key}: #{value}"}
   end
   
-  def self.get_work
+  def self.get_work2
   work = @results[1]["work"]
   work.each {|key, value| puts "#{key}: #{value}"}
   end

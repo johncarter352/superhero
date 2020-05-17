@@ -13,8 +13,21 @@ class API
      @object.results[0].appearance
      @object.results[0].work
      
-     binding.pry
+     #binding.pry
   end
+  
+  def self.get_bio
+  end 
+  
+  def self.get_stats
+  end 
+  
+  def self.get_appearance
+  end 
+  
+  def self.get_work
+  end 
+  
   
 
   

@@ -1,6 +1,4 @@
-require '.lib/superhero/api'
-
-class Superhero
+class Hero
   
   attr_accessor :name, :object
   
@@ -16,6 +14,7 @@ class Superhero
   end
   
   def name_choice
+  end
   
   def biography
      @object.results[0].biography
@@ -33,6 +32,7 @@ class Superhero
     @object.results[0].work
   end
   
+  binding.pry
   
   
   

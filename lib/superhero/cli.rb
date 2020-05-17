@@ -21,7 +21,9 @@ class CLI
     puts "Choose a category you would like to get more information on:"
     puts "Biography, Power Statistics, Appearance, or Work"
     #if
+    puts "  "
     puts API.get_bio
+    puts "  "
     
   end
   

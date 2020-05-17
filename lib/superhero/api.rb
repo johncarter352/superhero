@@ -5,17 +5,17 @@ class API
     response = Net::HTTP.get(URI(url))
   
    
-     object = JSON.parse(response, object_class: OpenStruct)
+     @object = JSON.parse(response, object_class: OpenStruct)
   
      
      #binding.pry
   end
   
-    object.results[0].name
-     object.results[0].biography
-     object.results[0].powerstats
-     object.results[0].appearance
-     object.results[0].work
+     @object.results[0].name
+     @object.results[0].biography
+     @object.results[0].powerstats
+     @object.results[0].appearance
+     @object.results[0].work
   
   
 end

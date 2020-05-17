@@ -11,21 +11,21 @@ class CLI
     API.get_hero(@name)
     puts "Choose a category you would like to get more information on:"
     array = ["Biography", "Stats", "Appearance", "Work"]
-    puts #{array}
+    puts array
     puts " "
-    response = get.strip.downcase
-    if response == array[0]
+    choice = gets.strip.downcase
+    if choice = array[0]
       puts API.get_bio
-    elsif response == array[1]
+    elsif choice = array[1]
       puts API.get_stats
-    elsif response == array[2]
+    elsif choice = array[2]
       puts API.get_appearance
-    elsif response == array[3]
+    elsif choice = array[3]
       puts API.get_work
     end
   end
-  
-  end
+
+end
   
 
 ### handles input FROM my user and output TO my user

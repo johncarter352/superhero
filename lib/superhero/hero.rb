@@ -17,16 +17,6 @@ class Hero
   def result
     API.result
   end
-    
-  
-  end
-  
-  
-  
-  
-  
-  
-  
 end
 
 ## responsible for introducing Superhero

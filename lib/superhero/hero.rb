@@ -1,17 +1,23 @@
 class Hero
   
-  attr_accessor :name, :object
+  attr_accessor :name, :object, :results
   
   @@all = []
   
   def initialize(name)
     @name = name 
+    @results = results
     @@all << self
   end
   
   def self.all 
     @@all
   end
+  
+  def results
+    API.results
+  end
+    
   
   def name_choice
   end

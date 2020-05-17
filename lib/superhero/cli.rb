@@ -17,7 +17,8 @@ class CLI
      
     
     puts "   "
-    puts "Choose a category you would like to get more information on"
+    puts "Choose a category you would like to get more information on:"
+    puts "Biography, Power Statistics, Appearance, or Work"
     
   end
   

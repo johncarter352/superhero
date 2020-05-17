@@ -1,19 +1,16 @@
 class API
+   @url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{name}"
+   
   def self.get_hero(name)
-    url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{name}"
    
     response = Net::HTTP.get(URI(url))
-  
-   
-      @object = JSON.parse(response, object_class: OpenStruct)
-    
-     @object.results[0].name
-     @object.results[0].biography
-     @object.results[0].powerstats
-     @object.results[0].appearance
-     @object.results[0].work
+    object = JSON.parse(response, object_class: OpenStruct)
      
      #binding.pry
+  end
+  
+  def self.results
+    @object.results
   end
   
   def self.get_bio

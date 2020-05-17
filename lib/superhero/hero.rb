@@ -1,3 +1,5 @@
+require '.lib/superhero/api'
+
 class Superhero
   
   attr_accessor :name, :object
@@ -13,20 +15,22 @@ class Superhero
     @@all
   end
   
+  def name_choice
+  
   def biography
-    
+     @object.results[0].biography
   end 
   
   def powerstats
-    
+    @object.results[0].powerstats
   end 
   
   def appearance 
-    
+     @object.results[0].appearance
   end 
   
   def work 
-    
+    @object.results[0].work
   end
   
   

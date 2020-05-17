@@ -6,20 +6,27 @@ class CLI
     puts "What superhero would you like to know more information about?"
     puts "   "
     @name = gets.strip.downcase
-    API.get_hero(@name)
-    
-     ## if name has multiple results ask user which name he is refering to 
-     
-     ## once user chooses ask user which category he would like to have infomation about
-     ## list categories
-     ## once user picks catergory display results
-     ## at the end of display ask user if he wants to research a different category if yes send back to list if no ask if he want to know about a different hero 
-     ##if no for both exit!
-     
-    
     puts "   "
     puts "Choose a category you would like to get more information on:"
     puts "Biography, Power Statistics, Appearance, or Work"
+    if response = biography
+      puts API.get_bio
+    if response = stats
+      puts API.get_stats
+    if response = appearance
+      puts API.get_appearance
+    if response = work 
+      puts API.get_work
+    
+    
+    #API.get_hero(@name)
+    
+     
+     
+     
+     
+    
+    
     #if
     puts "  "
     puts API.get_bio

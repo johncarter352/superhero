@@ -5,25 +5,51 @@ class API
     url = "https://www.superheroapi.com/api.php/10213815254774657/search/#{name}"
     response = Net::HTTP.get(URI(url))
     object = JSON.parse(response)
-    results = object["results"]
+    @results = object["results"]
      
+     binding.pry
     
   end
   
   def self.get_bio
-   results[0]["biography"]
+   bio = @results[0]["biography"]
+   bio.each {|key, value| puts "#{key}: #{value}"}
+  end 
+  
+  def self.get_bio
+   bio = @results[1]["biography"]
+   bio.each {|key, value| puts "#{key}: #{value}"}
   end 
   
   def self.get_stats
-  results[0]["powerstats"]
+  stats = @results[0]["powerstats"]
+  stats.each {|key, value| puts "#{key}: #{value}"}
+  end 
+  
+  def self.get_stats
+  stats = @results[1]["powerstats"]
+  stats.each {|key, value| puts "#{key}: #{value}"}
   end 
   
   def self.get_appearance
-    results[0]["appearance"]
+  app = @results[0]["appearance"]
+  app.each {|key, value| puts "#{key}: #{value}"}
+  end 
+  
+   def self.get_appearance
+  app = @results[1]["appearance"]
+  app.each {|key, value| puts "#{key}: #{value}"}
   end 
   
   def self.get_work
-    results[0]["work"]
+  work = @results[0]["work"]
+  work.each {|key, value| puts "#{key}: #{value}"}
+  end
+  
+  def self.get_work
+  work = @results[1]["work"]
+  work.each {|key, value| puts "#{key}: #{value}"}
+  end
 
   
 end

@@ -39,14 +39,15 @@ class CLI
       puts API.get_work
       puts API.newname2
       puts API.get_work2
-    else
+    else 
       puts ""
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"
     end
-    
   end
+   
+
 
 end
-  
+
 
 ### handles input FROM my user and output TO my user

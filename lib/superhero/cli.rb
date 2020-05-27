@@ -17,28 +17,16 @@ class CLI
     choice = gets.chomp!
     if choice == array[0]
       puts ""
-      puts API.newname
-      puts API.get_bio 
-      puts API.newname2
-      puts API.get_bio2
+    
     elsif choice == array[1]
       puts ""
-      puts API.newname
-      puts API.get_stats
-      puts API.newname2
-      puts API.get_stats2
+    
     elsif choice == array[2]
       puts ""
-      puts API.newname
-      puts API.get_appearance
-      puts API.newname2
-      puts API.get_appearance2
+   
     elsif choice == array[3] 
       puts ""
-      puts API.newname
-      puts API.get_work
-      puts API.newname2
-      puts API.get_work2
+    
     else 
       puts ""
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"

@@ -6,6 +6,10 @@ class Hero
   
   def initialize(name)
     @name = name 
+    @biography = biography
+    @stats = stats
+    @appearance = appearance
+    @work = work
     @results = results
     @@all << self
   end

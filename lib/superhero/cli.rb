@@ -34,7 +34,20 @@ class CLI
       puts ""
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"
     end
-    puts "Would you like to know more about any other Superhero?"
+    puts ""
+    loop
+  end
+  
+  def loop
+    puts "Would you like to know more about another Superhero?"
+    array = ["Yes", "No"]
+    choice = gets.chomp!
+    if choice == array[0]
+     run 
+    else 
+      puts ""
+      puts "Thank you for visiting to learn more about Superheroes. Hope to see you back soon!"
+    end
   end
    
 

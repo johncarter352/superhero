@@ -1,9 +1,13 @@
 
 class CLI
   
-  def run 
+  def run
     puts "   "
     puts "Welcoming all new Superhero fans!"
+    information
+  end
+    
+  def information
     puts "  "
     puts "What superhero would you like to know more information about?"
     puts "   "
@@ -11,10 +15,10 @@ class CLI
     puts "   "
     API.get_hero(@name)
     puts "Choose a category you would like to get more information on:"
-    array = ["Biography", "Stats", "Appearance", "Work"]
+    array = ["BIOGRAPHY", "STATS", "APPEARANCE", "WORK"]
     puts array
     puts " "
-    choice = gets.chomp!
+    choice = gets.chomp.upcase!
     if choice == array[0]
       puts ""
       API.get_bio
@@ -40,10 +44,10 @@ class CLI
   
   def loop
     puts "Would you like to know more about another Superhero?"
-    array = ["Yes", "No"]
-    choice = gets.chomp!
+    array = ["YES", "NO"]
+    choice = gets.chomp.upcase!
     if choice == array[0]
-     run 
+     information
     else 
       puts ""
       puts "Thank you for visiting to learn more about Superheroes. Hope to see you back soon!"

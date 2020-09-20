@@ -17,20 +17,24 @@ class CLI
     choice = gets.chomp!
     if choice == array[0]
       puts ""
+      API.get_bio
     
     elsif choice == array[1]
       puts ""
-    
+      API.get_stats
+      
     elsif choice == array[2]
       puts ""
+      API.get_appearance
    
     elsif choice == array[3] 
       puts ""
-    
+      API.get_work
     else 
       puts ""
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"
     end
+    puts "Would you like to know more about any other Superhero?"
   end
    
 

@@ -1,12 +1,15 @@
 class Hero
   
-  attr_accessor :name, :biography
+  attr_accessor :name, :biography, :stats, :appearance, :work
   
   @@all = []
   
   def initialize(name, biography)
     @name = name 
     @biography = biography
+    @stats = stats
+    @appearance = appearance
+    @work = work
     @@all << self
   end
   

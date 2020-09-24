@@ -9,7 +9,7 @@ class API
     stats = @results[0]["powerstats"]
     appearance = @results[0]["appearance"]
     work = @results[0]["work"]
-    Hero.new(name, bio)
+    Hero.new(name, bio, stats, appearance, work)
   end
 
 end

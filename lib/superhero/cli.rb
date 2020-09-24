@@ -45,8 +45,10 @@ class CLI
   def loop
     puts "Would you like to know more about another Superhero?"
     array = ["YES", "NO"]
+    puts ""
+    puts array
     choice = gets.chomp.upcase!
-    if choice == array[0]
+    if choice == array[0]||"Y"
      information
     else 
       puts ""

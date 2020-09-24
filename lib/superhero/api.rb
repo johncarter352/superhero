@@ -7,7 +7,7 @@ class API
     @results = object["results"]
     cli = CLI.new
       if object["response"] == "error"
-      puts "I am sorry, we do not have that character."
+      puts "I am sorry, we do not have information on that character. Please comeback soon as we work to find more information on your Superhero!"
       exit
     else
   end

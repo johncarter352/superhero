@@ -25,15 +25,15 @@ class CLI
     
     elsif choice == array[1]
       puts ""
-      API.get_stats
+      puts new_hero.stats
       
     elsif choice == array[2]
       puts ""
-      API.get_appearance
+      puts new_hero.appearance
    
     elsif choice == array[3] 
       puts ""
-      API.get_work
+      puts new_hero.work
     else 
       puts ""
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"

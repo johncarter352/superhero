@@ -48,7 +48,7 @@ class CLI
     puts ""
     puts array
     choice = gets.chomp.upcase!
-    if choice == array[0]||"Y"
+    if choice == array[0]
      information
     else 
       puts ""

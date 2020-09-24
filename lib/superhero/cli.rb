@@ -39,10 +39,10 @@ class CLI
       puts "I'm sorry, we have not yet collected that data. We will work on finding that out for you. COMEBACK SOON!"
     end
     puts ""
-    loop
+    replay
   end
   
-  def loop
+  def replay
     puts "Would you like to know more about another Superhero?"
     array = ["YES", "NO"]
     puts ""
@@ -53,6 +53,7 @@ class CLI
     else 
       puts ""
       puts "Thank you for visiting to learn more about Superheroes. Hope to see you back soon!"
+      exit
     end
   end
    

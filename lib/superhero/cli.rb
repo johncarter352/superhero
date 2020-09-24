@@ -13,7 +13,7 @@ class CLI
     puts "   "
     @name = gets.strip.downcase
     puts "   "
-    API.get_hero(@name)
+    new_hero = API.get_hero(@name)
     puts "Choose a category you would like to get more information on:"
     array = ["BIOGRAPHY", "STATS", "APPEARANCE", "WORK"]
     puts array
@@ -21,7 +21,7 @@ class CLI
     choice = gets.chomp.upcase!
     if choice == array[0]
       puts ""
-      API.get_bio
+      puts new_hero.biography
     
     elsif choice == array[1]
       puts ""
@@ -58,5 +58,3 @@ class CLI
 
 end
 
-
-### handles input FROM my user and output TO my user

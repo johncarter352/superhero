@@ -5,13 +5,13 @@ class API
     response = Net::HTTP.get(URI(url))
     object = JSON.parse(response)
     @results = object["results"]
-    @results.each do |sh|
-  end
+    bio = @results[0]["biography"]
+    Hero.new(name, bio)
   end
   
   def self.get_bio
    bio = @results[0]["biography"]
-   bio.collect {|key, value| puts "#{key}: #{value}"}
+   bio.each {|key, value| puts "#{key}: #{value}"}
   end
   
   
@@ -36,6 +36,3 @@ class API
 
   
 end
-
-### service file/class. Responsible for communicating with my api - 
-### going out to it, getting my information and returning it. 

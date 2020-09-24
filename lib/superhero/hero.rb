@@ -1,16 +1,12 @@
 class Hero
   
-  attr_accessor :name, :object, :biography, :stats, :appearance, :work 
+  attr_accessor :name, :biography
   
   @@all = []
   
-  def initialize(name)
+  def initialize(name, biography)
     @name = name 
     @biography = biography
-    @stats = stats
-    @appearance = appearance
-    @work = work
-    @results = results
     @@all << self
   end
   
@@ -18,9 +14,9 @@ class Hero
     @@all
   end
   
-  def result
-    API.result
+  def biography
+    
   end
+  
+  
 end
-
-## responsible for introducing Superhero

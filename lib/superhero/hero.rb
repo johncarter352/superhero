@@ -15,8 +15,19 @@ class Hero
   end
   
   def biography
-    
+    bio.each {|key, value| "#{key}: #{value}"}
   end
   
+  def stats 
+    stats.collect {|key, value| "#{key}: #{value}"}
+  end
+  
+  def appearance
+     appearance.collect {|key, value| "#{key}: #{value}"}
+  end
+  
+  def work 
+    work.collect {|key, value| "#{key}: #{value}"}
+  end
   
 end

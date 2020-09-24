@@ -5,6 +5,12 @@ class API
     response = Net::HTTP.get(URI(url))
     object = JSON.parse(response)
     @results = object["results"]
+    cli = CLI.new
+      if object["response"] == "error"
+      puts "I am sorry, we do not have that character."
+      exit
+    else
+  end
     bio = @results[0]["biography"]
     stats = @results[0]["powerstats"]
     appearance = @results[0]["appearance"]
